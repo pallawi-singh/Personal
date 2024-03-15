@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sail&display=swap');
+
+/* font-family: "Lato", sans-serif; */
+/* font-family: "Sail",system-ui; */
+.cursive-font {
+    font-family: "Sail", system-ui;
+}
+
+:root {
+    --bg-dark: #1f2833;
+    --text-dark: #1f2833;
+    --bg-green: #66fcf1;
+    --text-green: #66fcf1;
+    --bg-grey: #c5c6c7;
+    --text-grey: #c5c6c7;
+    --bg-darkgreen: #e005a9;
+    --text-darkgreen: #e005a9;
+
+}
+
+.bg-dark {
+    background: var(--bg-dark) !important;
+}
+
+.text-dark {
+    color: var(--text-dark) !important;
+}
+
+.bg-green {
+    background: var(--bg-green) !important;
+}
+
+.text-green {
+    color: var(--text-green) !important;
+}
+
+.bg-darkgreen {
+    background: var(--bg-darkgreen) !important;
+}
+
+.text-darkgreen {
+    color: var(--text-darkgreen) !important;
+}
+
+.bg-grey {
+    background: var(--bg-grey) !important;
+}
+
+.text-grey {
+    color: var(--text-grey) !important;
+}
+
+body {
+    background: #0b0c10;
+    height: auto;
+    font-family: "Lato", sans-serif;
+}
+
+/* .height{
+    height: 100vh;
+} */
+/* Navbar css start here */
+.navbar-nav a {
+    position: relative;
+}
+
+.navbar-nav a::after {
+    content: '';
+    position: absolute;
+    background: #66fcf1;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+/* Navbar css end here */
+
+/* About some basic start informastion css */
+.btn-project {
+    border: 1px solid #66fcf1 !important;
+    box-shadow: 2px 1px 4px #c5c6c7;
+}
+
+.btn-project:hover {
+    background: #66fcf1 !important;
+    color: #0b0c10 !important;
+}
+
+.img-shadow {
+    border: 1px solid #fcf7f7;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 16px #ffff, inset 0 0 16px #ffff, 0 0 8px #1f2833, inset 0 0 8px #1f2833, 0 0 16px #66fcf1,
+        inset 0 0 16px #66fcf1;
+    background: url(images/my-img-3.jpg), no-repeat;
+    background-size: 100%;
+}
+
+/* About some basic end informastion css */
+
+/* About me css start here */
+.disc-link {
+    cursor: pointer;
+    position: relative;
+}
+
+.disc-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: #e005a9;
+}
+
+.disc-link.active::after {
+    width: 50%;
+}
+
+.skill {
+    list-style: none;
+}
+
+.shadow {
+    box-shadow: 0 0 6px #f9f5f5 !important;
+}
+
+/* About me css start here */
