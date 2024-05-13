@@ -61,9 +61,12 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-/* .height{
+
+
+.height {
     height: 100vh;
-} */
+}
+
 /* Navbar css start here */
 .navbar-nav a {
     position: relative;
@@ -72,7 +75,7 @@ body {
 .navbar-nav a::after {
     content: '';
     position: absolute;
-    background: #66fcf1;
+    background: #ff00aa;
     left: 0;
     bottom: 0;
     width: 0;
@@ -82,6 +85,11 @@ body {
 
 .navbar-nav a:hover::after {
     width: 100%;
+
+}
+
+.navbar-nav a:hover {
+    color: #ff00aa !important;
 }
 
 /* Navbar css end here */
@@ -131,7 +139,7 @@ body {
 
 .skill {
     list-style: none;
-    
+
 }
 
 .tab-content {
@@ -147,6 +155,54 @@ body {
 }
 
 /* About me css start here */
+
+/* work section start here */
+
+.card img {
+    height: 150px !important;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.btn:hover{
+background: #ff00aa !important;
+color: #66fcf1;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+
+h2::before,
+h2::after {
+    background-color: #ff00aa;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+
+
+
 
 /* contact css start here */
 input,
